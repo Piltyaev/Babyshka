@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Новым годом, Родная Бабушка!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5e6;
+            color: #5106dd;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff0000, #ff0000);
+            color: rgb(238, 255, 0);
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 60px; /* Добавлено, чтобы было место для кнопки */
+        }
+
+        .container h2 {
+            color: #24c924;
+        }
+
+        .photo {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(6, 83, 184);
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container button:hover {
+            background-color: #e60000;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #24c924;
+            display: none;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>С Новым годом, Родная Бабушка!</h1>
+    </header>
+
+    <div class="container">
+        <h2>Добро пожаловать в 2025 год !!!</h2>
+        <p>Мы тебя очень любим и поздравляем с этим замечательным праздником. Пусть твой год будет таким же светлым, как гирлянды на ёлке, и таким же тёплым, как наша любовь к вам!</p>
+
+        <div class="photo">
+            <img src="resized_foto.jpeg" alt="Фото бабушки">
+        </div>
+
+        <div class="button-container">
+            <button onclick="showMessage()">Нажми меня</button>
+        </div>
+
+        <div id="message" class="message">Мы все любим тебя !!!!!</div>
+    </div>
+</body>
+</html>
